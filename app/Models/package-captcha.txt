@@ -1,0 +1,15 @@
+<script src="https://www.google.com/recaptcha/api.js?render=6LcPHjEaAAAAAOxoLBZILnFGPe3FuMHT4uKB3yhn"></script>
+
+<script> 
+
+    grecaptcha.ready(function() {
+
+      grecaptcha.execute('6LcPHjEaAAAAAOxoLBZILnFGPe3FuMHT4uKB3yhn', {action: 'submit'}).then(function(token) {
+
+        document.getElementById("g-recaptcha-response").value=token
+
+      });
+
+    });
+
+</script>

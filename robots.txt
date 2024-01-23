@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /pressreleases
+
+Sitemap: https://www.pharmafocusasia.com/sitemap.xml

@@ -1,0 +1,17 @@
+<?php
+echo '<?xml version="1.0"?>';
+?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+   <?php $__currentLoopData = $strategy; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $strateg): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+    <url>
+        <loc><?php echo e(url('/')); ?>/strategy/<?php echo e($strateg->url); ?></loc>
+    
+    
+        <lastmod> <?php echo e($strateg->updated_at); ?> </lastmod>
+    
+        <changefreq>daily</changefreq>
+    
+        <priority>0.1</priority>
+    </url>
+    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+</urlset><?php /**PATH /home/pharmafocusasia/public_html/resources/views/sitemaps/strategy.blade.php ENDPATH**/ ?>
